@@ -22,7 +22,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/linx@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/linx@sha256:a9a551f40b6c939bf7ee905e0b3c2cc250cd8ad7cc45dfb7aeca3d22464c6614
   platforms: [linux/amd64, linux/arm64]
   command: ["linx", "-output", "/opt/linx/stdout.json", "{url}"]
   output_format: json
